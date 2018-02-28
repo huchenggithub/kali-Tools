@@ -99,3 +99,9 @@ def deb():
         print (colored("操作完成，3秒后重启脚本","blue"))
         time.sleep(3)
         os.system('python3 Tools.py')
+def gpg():
+    os.system('wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add')
+    os.system('apt-get update')
+    print (colored("操作完成，3秒后重启脚本","blue"))
+    time.sleep(3)
+    os.system('python3 Tools.py')

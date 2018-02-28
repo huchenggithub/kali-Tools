@@ -14,6 +14,7 @@ if XX == "help":
     print ("         install 安装程序")
     print ("          exit 退出")
     print ("          deb 修改安装源")
+    print ("          gpg 修复apt-get时的数字签名错误")
     XX= input(colored('请写出您要执行的命令:',"yellow"))
 if XX == "exit":
     exit()
@@ -21,3 +22,5 @@ if XX == "deb":
     install.deb()
 if XX == "install":
     install.install()
+if XX == "gpg":
+    install.gpg()
